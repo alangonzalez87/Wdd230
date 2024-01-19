@@ -19,8 +19,8 @@ Fonts are separated by a | */
   --heading-font: 'Averia Serif Libre';
   --paragraph-font: 'roboto', sans-serif;
 
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #AB2346;   
+  
+  --headline-color-on-white: #ac03a6;   
   --headline-color-on-color: #C9DAEA;  
   --paragraph-color-on-white: #00B295;  
   --paragraph-color-on-color: #C9DAEA; 
@@ -42,12 +42,15 @@ body {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
 h2 {
+  font-family:var(--heading-font); 
+  text-decoration: underline;
   text-align: center;
+  color: var(--secondary-color);
 }
 hr {
   height: 3px;
@@ -138,40 +141,9 @@ nav a:hover {
     ". left left right right ."
     "page2 page2 . . page3 page3";
 }
-.sitemap > div {
 
-  text-align: center;
-
-}
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
-}
-
-.top {
-  grid-area: top;
-  border-left: 1px solid;
-}
-
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
-}
-
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
+.wire{
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+    font-size: 1.5rem;
 }
