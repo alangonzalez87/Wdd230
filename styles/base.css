@@ -7,6 +7,9 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
+body.active {
+    background: #0b0b0b;
+}
 header{
     background-color: aqua;
     display: flex;
@@ -17,25 +20,36 @@ header{
 h1{
     font-size: 2rem;
 }
-nav{
-    
-    background-color: blanchedalmond;
+h1.active{
+    color: #eaeaea;
 }
-nav ul{
+nav{
+   
+    background-color: rgb(244, 241, 237);
+}
+nav li{
+    display: inline-block;
+}
+nav li a{
+    font-size: 3em;
+    padding: 2.3em;
+    text-decoration: none;
+}
+.navi ul {
     list-style-type: none;
 }
-nav a{
+.navi a{
     display: block;
     color: black;
-    text-align: center;
+    text-align: left;
     padding: .5rem;
     text-decoration: none;
 }
-nav a:hover{
+.navi a:hover{
     background-color: rgba(255,255,255, 0.2);
 }
 nav .active{
-    background-color: rgba(0, 0, 0,0.2);
+    background-color: rgba(5, 215, 252, 0.852);
 }
 main{
     margin: 1rem 2vw;
@@ -69,3 +83,36 @@ main section span{
 
     font-size: 2rem
 }
+
+#toggle {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 160px;
+    background: #222;
+    transition: 0.5s;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+  }
+  #toggle .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #444, #222);
+    cursor: pointer;
+    transform: scale(0.9);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5), inset 0 4px 4px rgba(255, 255, 255, 0.2) inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+  }
+  #toggle.active {
+    background: rgba(7, 165, 239, 0.8);
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+  }
+  #toggle.active .indicator {
+    left: 45px;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+  }

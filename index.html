@@ -30,7 +30,8 @@
         <span>Alan Gonzalez</span>
     </header>
     <nav>
-        <ul>
+        <div class="toggle"></div>
+        <ul class="navigation">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="week1/chamber-site-plan.html">Chamber Site Plan</a></li>
             <li><a href="#">Site Plan</a> </li>
@@ -42,8 +43,8 @@
         <div class="parent">
             <section class="card">
                 <h2>Learning Activities</h2>
-            <ul>
-                <li><a href="week1/chamber-site-plan.html">Week 1:Chamber Site Plan</a></li>
+            <ul class="navi">
+                <li><a href="week1/chamber-site-plan.html">Week 1: Chamber Site Plan</a></li>
                 <li><a href="#">Week 2</a></li>
                 <li><a href="#">Week 3</a></li>
                 <li><a href="#">Week 4</a></li>
@@ -56,12 +57,15 @@
             <span>Aca va la informacion</span>
         </section>
         </div>
-        
+        <div id="toggle">
+            <i class="indicator"></i>
+        </div>
     </main>
     <footer>
         <p> <span id="currentYear"></span> &copy; Alan Gonzalez Argentina Bs As Mar del plata </p>
         <p id="lastModified"> Last Modification: </p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
