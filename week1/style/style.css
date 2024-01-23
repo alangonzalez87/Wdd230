@@ -3,19 +3,17 @@
     padding: 0;
     margin: 0;
 }
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
+
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Bree+Serif&family=Ubuntu&display=swap');
 
 :root {
-  /* change the values below to your colors from your palette */
+  
   --primary-color:#8e518d  ;
   --secondary-color: #c86fc9 ;
   --accent1-color: #f7c7db;
   --accent2-color: #d7c0d0;
 
-  /* change the values below to your chosen font(s) */
+ 
   --heading-font: 'Averia Serif Libre';
   --paragraph-font: 'roboto', sans-serif;
 
