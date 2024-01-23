@@ -91,7 +91,7 @@ header nav ul{
         overflow: hidden;
         margin: 1rem 0;
   }
- .card h1{
+ .card h2{
     background-color: #9b084d;
     color: #fff;
     display: block;
@@ -114,7 +114,7 @@ header nav ul{
     margin: 1rem auto;
     max-width: 1840px;
 }
-.spotlight h1{
+.spotlight h2{
     background-color: #9b084d;
     color: #fff;
     display: block;
