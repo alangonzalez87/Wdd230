@@ -41,91 +41,110 @@ header nav ul{
       padding: 1.5em;
       display: inline-block;
     }
-.hero-photo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80vh; /* Ajusta según tus necesidades */
-}
-.mi-recuadro {
-    width:100%; /* ajusta el ancho según tus necesidades */
-    height: 600px; /* ajusta la altura según tus necesidades */
-    border: 4px solid #af0593; /* grosor y color del borde */
-    background-image: url('../images/mardelIa.jpeg'); /* reemplaza con la ruta de tu imagen */
-    background-size: cover; /* ajusta el tamaño de la imagen para cubrir el recuadro */
-    background-position: center; /* centra la imagen en el recuadro */
-    background-repeat: no-repeat; /* evita que la imagen se repita */
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-  }
+.container-discover {
+      padding-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 3fr; /* Columnas para la barra lateral y el contenido principal */
+     
+    }
 
-  .actionButton{
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: #ac0369f0; /* Color de fondo del botón */
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  .actionButton:hover{
-    background-color: #0056b3;
-  }
-  .container{
+    .special-attractions {
+      list-style-type: none;
+      padding: 10px;
+      }
     
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta según tus necesidades */
-        gap: 1rem;
-        margin: 1rem 2vw;
+    .special-attractions > li {
+      text-decoration: underline;
+      font-size: large;
+      font-weight: bold;
+    }
     
-  }
-  .card{
-        margin: 1rem 2vw;
-        border: 1px solid #88053e;
-        background-color: #C9DAEA;
-        border-radius: 10px;
-        overflow: hidden;
-        margin: 1rem 0;
-  }
- .card h2{
-    background-color: #9b084d;
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding: .75rem 0;
- }
-.current-events{
-    color: #100101;
-    text-decoration: none;
+    .subgroup {
+      padding-left: 20px; /* Agregar sangría para indicar subgrupo */
+    }
     
-    font-size: 2rem;
+    .subgroup li {
+      text-decoration: none;
+      font-weight: normal;
+      font-style: italic; /* Dar estilo itálico al texto del subgrupo */
+    }
     
-}
-.spotlight{
-   
-    border: 1px solid #88053e;
-    background-color: #C9DAEA;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 1rem auto;
-    max-width: 1840px;
-}
-.spotlight h2{
-    background-color: #9b084d;
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding: .75rem 0;
-}
-.new{
-    color: #100101;
-    text-decoration: none;
-    font-size: 2rem;
-}
+    .sidebar {
+      background-color: #A3A2DF;
+      padding-top: 500px;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      height: 100vh; /* Reducir la altura total restando el espacio de relleno */
+      width: 350px; /* Ajusta la altura según sea necesario */
+    }
+    
+    .calendar {
+      max-width: 100%; /* Ajusta el ancho del contenedor según sea necesario */
+      overflow-x: hidden; /* Evita que el calendario se desborde horizontalmente */
+    }
+    
+    .calendar iframe {
+      width: 100%; /* Ocupa todo el ancho del contenedor */
+      height: 600px; /* Altura predeterminada del calendario */
+    }
+    .title{
+      background-color: #A3A2DF;
+      text-align: center;
+      text-shadow: white;
+      color:#B91E73 ;
+      font-size: 2.5em;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+    }
+
+.gallery {
+      display: grid;
+      grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+    
+    .gallery figure {
+      margin: 0;
+    }
+    
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .gallery figcaption {
+      text-align: center;
+    }
+    picture{
+      position: relative;
+      display: inline-block;
+    }
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.607);
+    }
+    .gallery:hover .overlay {
+      opacity: 0; /* Oculta el overlay al hacer hover sobre la imagen */
+    }
+    .caption {
+      position: absolute;
+      bottom: 35%;
+      left: 50%;
+      width: 100%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      padding: 50px; /* Espaciado interno */
+      background-color: rgba(255, 255, 255, 0.499); /* Fondo blanco */
+      color: #B91E73; /* Texto  */
+      border-radius: 5px; /* Bordes redondeados */
+      font-size: 70px;
+    }
+
 #toggle {
     position: relative;
     display: block;

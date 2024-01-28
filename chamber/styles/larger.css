@@ -69,6 +69,14 @@
       .toggle.active::after {
         transform: translateY(0px) rotate(-45deg);
       }
-
+      .sidebar {
+        width: 100%; /* Ancho completo del sidebar en pantallas pequeñas */
+      }
+      
+}
+@media (max-width: 1265px) {
+  .caption, .overlay {
+    display: none; /* Oculta el subtítulo y el overlay en dispositivos móviles */
+  }
 }
     
