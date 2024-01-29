@@ -34,56 +34,102 @@ nav li a{
     font-size: 3em;
     padding: 2.3em;
     text-decoration: none;
-}
-.navi ul {
-    list-style-type: none;
-}
-.navi a{
-    display: block;
-    color: black;
-    text-align: left;
-    padding: .5rem;
-    text-decoration: none;
-}
-.navi a:hover{
-    background-color: rgba(255,255,255, 0.2);
-}
+} 
 nav .active{
     background-color: rgba(5, 215, 252, 0.852);
+} 
+.hero{
+    position: relative;
 }
-main{
-    margin: 1rem 2vw;
+.hero img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
-
-main section{
+.hero span{
+    position: absolute;
+    bottom: 35%;
+    left: 0;
+    width: 100%;
+    right: 0;
+    text-align: center;
+    padding: 20px; /* Espaciado interno */
+    background-color: rgba(255, 255, 255, 0.499); /* Fondo blanco */
+    color: #060003; /* Texto  */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 30px;  
+    font-weight: bold; 
+}
+h1{
+    color: #415541;
+    text-align: center;
+    font-family: 'roboto', serif;
+}
+.parent{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+.card {
     border: 1px solid #415541;
     background-color: #c9f5e9;
     border-radius: 10px;
     overflow: hidden;
     margin: 1rem 0;
-}
-main section h2{
+  }
+  
+  .card h2 {
     background-color: #415541;
     color: #fff;
     display: block;
     text-align: center;
     padding: .75rem 0;
-}
-main section  li a{
-    color: #100101;
+    font-size: 2em;
+  }
+  
+  .navi ul {
+    list-style-type: none;
+    padding: 0; /* Eliminar el relleno predeterminado de la lista */
+  }
+  
+  .navi li {
+    padding: .5rem;
+  }
+  
+  .navi a {
+    display: block;
+    color: black;
     text-decoration: none;
-    padding: 10px;
-    font-size: 1.5rem;
-    
-}
-main section  li a:hover{
-    background-color: rgba(255,255,255, 0.4);
-}
-main section span{
+    font-family: 'roboto', serif;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .navi a:hover {
+    background-color: rgba(64, 93, 73, 0.672);
+  }
+  #visit-counter{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: 'roboto', serif;
+    font-size: 2em;
+    font-weight: bold;
+  }
 
-    font-size: 2rem
-}
+  footer{
+    background: #A3A2DF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px; 
 
+  }
+  footer p{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+  }
 #toggle {
     position: relative;
     display: block;
@@ -115,4 +161,8 @@ main section span{
     left: 45px;
     box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
     background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+  }
+  iframe{
+    display: block ;
+    margin: 0 auto;
   }
