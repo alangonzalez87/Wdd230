@@ -105,20 +105,21 @@ header nav ul{
     
     .gallery figure {
       margin: 0;
+      position: relative;
     }
     
-    .gallery img {
+    /* .gallery img {
       max-width: 100%;
       height: auto;
     }
     
-    .gallery figcaption {
+    .gallery.caption {
       text-align: center;
-    }
-    picture{
+    } */
+     picture{
       position: relative;
       display: inline-block;
-    }
+    } 
     .overlay{
       position: absolute;
       top: 0;
@@ -142,6 +143,7 @@ header nav ul{
       color: #B91E73; /* Texto  */
       border-radius: 5px; /* Bordes redondeados */
       font-size: 70px;
+      text-align: center;
     }
 
 #toggle {
