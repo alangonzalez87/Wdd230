@@ -1,0 +1,133 @@
+/* form css*/
+legend{
+    font-family: "roboto", sans-serif;
+    font-size: 2em;
+    color: black;
+    background-color: aqua;
+    box-shadow: black;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+form{
+    text-align: center;
+}
+
+form label{
+    width: 300px;
+    margin: 0 auto;
+    padding: .75em;
+}
+
+form label.top input{
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+form label.top input[type=password]{
+    font-size: 1.5rem;
+    list-style-type: square;
+}
+form label.top input:required{
+    border-left: red solid 6px;
+}
+form label.top input:required:valid{
+    border-left: green solid 6px;
+}
+form input.submitBtn{
+    border: 2px solid #0cc6f5;
+    background-color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    font-size: 2em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form input.submitBtn:hover{
+    background-color: #0b7dda;
+    color: white;
+    cursor: pointer;
+}
+
+/* input range*/
+.form-container{
+    text-align: center;
+}
+hr {
+	margin-bottom: 40px;
+    margin-top: 40px;
+}
+label {
+	display: block;
+	font-weight: 700;
+}
+#r {
+    width: 180px;
+    margin-bottom: 0;
+  }
+  input[type=range] {
+	margin: 1rem;
+	padding: 0.9em;
+}
+
+  
+  #rangevalue {
+    font-size: 2rem;
+    color: navy;
+    margin: 1rem;
+  }
+  
+  #rangevalues {
+    display: flex;
+    margin: 0 auto;
+    width: 160px;
+  }
+  
+  #rangevalues option {
+    flex: 1 1 auto;
+    
+  }
+  /* modal styles*/
+.modal {
+    display: none; /* Por defecto oculto */
+    position: fixed; /* Se superpone al contenido */
+    z-index: 1; /* Encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Toma todo el ancho */
+    height: 100%; /* Toma toda la altura */
+    overflow: auto; /* Hace que el contenido sea desplazable si es necesario */
+    background-color: rgba(0,0,0,0.5); /* Fondo oscuro semitransparente */
+}
+
+.modal-content {
+    background-color: #fefefe; /* Fondo blanco */
+    margin: 15% auto; /* Centro verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del contenido */
+}
+
+/* Botón para cerrar el modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  

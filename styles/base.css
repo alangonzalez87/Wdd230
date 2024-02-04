@@ -23,19 +23,19 @@ h1{
 h1.active{
     color: #eaeaea;
 }
-nav{
+.navigation{
    
     background-color: rgb(244, 241, 237);
 }
-nav li{
+.navigation li{
     display: inline-block;
 }
-nav li a{
-    font-size: 3em;
+.navigation li a{
+    font-size: 2em;
     padding: 2.3em;
     text-decoration: none;
 } 
-nav .active{
+.navigation .active{
     background-color: rgba(5, 215, 252, 0.852);
 } 
 .hero{
@@ -168,3 +168,6 @@ h1{
     display: block ;
     margin: 0 auto;
   }
+
+  
+  

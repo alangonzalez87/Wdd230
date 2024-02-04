@@ -8,18 +8,17 @@
     <meta property="og:title" content="Pagina de Inicio de Alan Gonzalez">
     <meta property="og:description" content="Pagina oficial de Alan Gonzalez para el curso de byu-idahoo WDD230">
     <meta property="og:image" content="https://www.mardelplata.gob.ar/sites/default/files/texto_slide/xMDP2.jpg.pagespeed.ic.cVq6v2VQXd.webp">
-    <meta property="og:image:width" content="600"> <!-- Ancho de la imagen en píxeles -->
-    <meta property="og:image:height" content="400"> <!-- Altura de la imagen en píxeles -->
+    <meta property="og:image:width" content="600"> 
+    <meta property="og:image:height" content="400">
     <meta property="og:site_name" content="Alan Gonzalez WDD230">
-
     <meta name="author" content="Alan Gonzalez">
     <meta name="description" content="WDD 230 - Web Frontend Development, Alan Gonzalez">
-
     <title>Alan Gonzalez - WDD 230 - Web Frontend Development</title>
-    
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
 <link rel="icon" href="images/favicon.ico">
@@ -32,49 +31,63 @@
     <nav>
         <div class="toggle"></div>
         <ul class="navigation">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="week1/chamber-site-plan.html">Chamber Site Plan</a></li>
             <li><a href="#">Site Plan</a> </li>
-            <li><a href="./form.html">Form</a></li>
+            <li class="active"><a  href="#">Form</a></li>
         </ul>
     </nav>
-    <div class="hero">
+    <!-- <div class="hero">
          <picture>
             <source media="(max-width:400px )" srcset="images/buenos_aires_argentina_temple.webp"  width="400" height="600">
             <img src="images/8979f1bb74ce704198fb1e913253a5b0.webp" alt="table-setting" loading="lazy" width="1500" height="750">            
             </picture>
             <span>Buenos Aires Temple</span>
-    </div>
-   
+        </div> -->
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <div class="parent">
-            <section class="card">
-                <h2>Learning Activities</h2>
-            <ul class="navi">
-                <li><a href="week1/chamber-site-plan.html">Week 1: Chamber Site Plan</a></li>
-                <li><a href="./chamber/index.html">Week 2:Chamber-Site</a></li>
-                <li><a href="./chamber/discover.html">Week 3:Discover Site Plan</a></li>
-                <li><a href="./form.html">Week 4: Form</a></li>
-                <li><a href="#">Week 5</a></li>
-                <li><a href="#">Week 6</a></li>
-            </ul>
-        </section>
-        <section class="card">
-            <h2>Information</h2>
-            <div id="visit-counter">You are the Visit: <span id="visit-count">0</span></div>
-        </section>
-        </div>
-        <div id="toggle">
-            <i class="indicator"></i>
-        </div>
+        <h1>form</h1>
+        <form id="myForm" action="record.html" method="get">
+            <fieldset>
+                <legend>Aplicant Information</legend>
+                <label class="top">UserName* <input type="text" name="fname" required></label>
+                <label class="top">Password* <input id="password-input" class="password-field" type="password" name="Password" required></label>
+                <label class="top">Repeat Password* <input type="password" name="repeatPassword" required></label>
+                <label class="top">Email* <input type="email" name="email"required pattern="[a-zA-Z0-9._%+-]+@byu\.edu$" title="Please enter a valid email address from the byu.edu domain" placeholder="@byu.edu"></label>
+            </fieldset>
+            <input class="submitBtn" type="submit" value="Submit">
+        </form>
+        
+        <hr>
+        <div class="form-container">
+            <label for="r">Puntea mi pagina!</label>
+            <div id="rangevalue">0</div>
+            <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+        <datalist id="rangevalues">
+	        <option value="0">0</option>
+	        <option value="1">1</option>
+	        <option value="2">2</option>
+	        <option value="3">3</option>
+	        <option value="4">4</option>
+	        <option value="5">5</option>
+            <option value="6">6</option>
+	        <option value="7">7</option>
+	        <option value="8">8</option>
+	        <option value="9">9</option>
+	        <option value="10">10</option>
+            </datalist>
+         </div>
+         <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+            </div>     
     </main>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.6692170741303!2d-57.557882763589085!3d-37.98484820954097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d9571357053b%3A0xeee6d5fdc31479fc!2sMaip%C3%BA%204130%2C%20B7600HLV%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1706548434172!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p> <span id="currentYear"></span> &copy; Alan Gonzalez Argentina Bs As Mar del plata </p>
         <p id="lastModified"> Last Modification: </p>
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/getRange.js"></script>
 </body>
 </html>
