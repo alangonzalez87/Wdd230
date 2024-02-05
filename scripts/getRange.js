@@ -64,3 +64,30 @@ if (modal) {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    let form = document.getElementById("myForm");
+    let passwordInput = document.getElementById("password-input");
+    let repeatPasswordInput = document.getElementById("repeat-password-input");
+    let passwordMatchError = document.getElementById("password-match-error");
+    let submitBtn = document.querySelector(".submitBtn");
+
+    submitBtn.addEventListener("click", function(event) {
+        let password = passwordInput.value;
+        let repeatPassword = repeatPasswordInput.value;
+
+        // Verifica si las contraseñas coinciden
+        if (password !== repeatPassword) {
+            // Si no coinciden, muestra el mensaje de error y previene el envío del formulario
+            passwordMatchError.style.display = "block";
+            event.preventDefault();
+            // Evita el envío del formulario
+        } else {
+            // Si coinciden, oculta el mensaje de error
+            passwordMatchError.style.display = "none";
+            
+        }
+    });
+});
+
+
+
