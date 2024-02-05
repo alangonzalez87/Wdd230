@@ -4,7 +4,7 @@ legend{
     font-size: 2em;
     color: black;
     background-color: aqua;
-    box-shadow: black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
     display: block;
     width: 100%;
