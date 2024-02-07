@@ -185,3 +185,198 @@ header nav ul{
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
   }
+
+  /* join page*/
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns:  4fr 1fr 1fr ; 
+    width: 100%; 
+    margin: 0 auto;
+    padding-left: 20px;
+    gap: 2%;
+    align-items: baseline; 
+}
+legend{
+    font-family: "roboto", sans-serif;
+    font-size: 2em;
+    color: black;
+    background-color: aqua;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+form{
+    text-align: center;
+    padding: 2em;
+}
+
+form label{
+    width: 300px;
+    margin: 0 auto;
+}
+
+form label.top input{
+    display: block;
+    font-size: 2rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.top input:required{
+    border-left: red solid 6px;
+}
+form label.top input:required:valid{
+    border-left: green solid 6px;
+}
+form div{
+  font-size: 2em;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+}
+
+.text-tarea {
+  display: block;
+  margin-bottom: 1em; /* Espacio entre el texto y el textarea */
+  font-size: 1em;
+}
+
+.text-tarea textarea {
+  display: block;
+  width: 100%;
+}
+
+
+
+form label.membership, form div{
+  display: block;
+  padding-top: .75em;
+  font-size: 1.5em;
+  margin: 0 auto;
+  width: 200px;
+  text-indent: 1px;
+}
+form label.membership input[type="radio"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px; /* Ajusta el margen entre el botón y el texto */
+}
+form input.submitBtn{
+    border: 2px solid #0cc6f5;
+    background-color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    font-size: 2em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form input.submitBtn:hover{
+    background-color: #0b7dda;
+    color: white;
+    cursor: pointer;
+}
+.columns-benefits{
+  background-color: #A3A2DF;
+  padding-top: 500px;
+  padding: 20px;
+  top: 0;
+  height: 100vh; /* Reducir la altura total restando el espacio de relleno */
+  width: 350px;
+}
+.columns-benefits {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.columns-benefits h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.columns-benefits p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.columns-benefits ul {
+  font-size: 1em;
+  margin: 5px 0 0 20px;
+  padding: 0;
+}
+
+.columns-benefits ul li {
+  font-size: 1em;
+  list-style-type: disc;
+}
+.dropdown-list {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content li {
+  font-size: 1em;
+  padding-left: 20px;
+}
+
+.dropdown-toggle.active + .dropdown-content {
+  display: block;
+}
+hr{
+  padding: 10px;
+  
+}
+
+
+/* modal styles*/
+.modal {
+  display: none; /* Por defecto oculto */
+  position: fixed; /* Se superpone al contenido */
+  z-index: 1; /* Encima de todo */
+  left: 0;
+  top: 0;
+  width: 100%; /* Toma todo el ancho */
+  height: 100%; /* Toma toda la altura */
+  overflow: auto; /* Hace que el contenido sea desplazable si es necesario */
+  background-color: rgba(0,0,0,0.5); /* Fondo oscuro semitransparente */
+}
+
+.modal-content {
+  background-color: #fefefe; /* Fondo blanco */
+  margin: 15% auto; /* Centro verticalmente */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Ancho del contenido */
+}
+
+/* Botón para cerrar el modal */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
