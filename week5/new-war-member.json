@@ -1,0 +1,20 @@
+{
+    "familyName" : "Familia Pantorrila",
+    "homeTown" : "Metro City",
+    "moving" : 2016,
+    "numberOfRecords" : 2,
+    "bishopVisited" : true,
+    "members" : [
+      {
+        "name" : "juan altivo pantorrilla",
+        "gender" : "male",
+        "birthday" : "12/2/1987"
+      },
+      {
+        "name" : "juana casano",
+        "gender" : "female",
+        "birthday" : "12/2/1987"
+      }
+      
+    ]
+  }
