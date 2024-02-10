@@ -1,0 +1,49 @@
+{
+    "weeks": [
+        {
+            "week": "week 1",
+            "links": [
+                {
+                    "url": "week1/chamber-site-plan.html",
+                    "title": "Chamber plan"
+                }
+            ]
+        },
+        {
+            "week": "week 2",
+            "links": [
+                {
+                    "url": "./chamber/index.html",
+                    "title": "Index chamber"
+                }
+            ]
+        },
+        {
+            "week": "week 3",
+            "links": [
+                {
+                    "url": "./chamber/discover.html",
+                    "title": "Index discover"
+                }
+            ]
+        },
+        {
+            "week": "week 4",
+            "links": [
+                {
+                    "url": "./form.html",
+                    "title": "form"
+                }
+            ]
+        },
+        {
+            "week": "week 5",
+            "links": [
+                {
+                    "url": "week5/prophets.html",
+                    "title": "prophets"
+                }
+            ]
+        }
+    ]
+}
