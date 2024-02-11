@@ -14,17 +14,17 @@ document.getElementById("currentYear").innerText= year;
 
 /*Api weather */
 
-const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=-38.00&lon=-57.53&appid=7e14a48c2ba7cbfc26c38a57f084f9a3' 
+const linkWeather = 'https://api.openweathermap.org/data/2.5/onecall?lat=-38.00&lon=-57.53&appid=7e14a48c2ba7cbfc26c38a57f084f9a3' 
 const weatherElement= document.querySelector('#weather')
 const imagen= document.querySelector('#img-icon')
 const captionDesc= document.querySelector('#description')
 
 async function apiFetch() {
     try{
-         const response = await fetch(url);
+         const response = await fetch(linkWeather);
          if (response.ok){
             const data = await response.json();
-    console.log(data); // temporary testing of data retreival
+    
         // Actualizar los elementos del DOM con los datos meteorológicos
         const tempKelvin = data.current.temp;
         const tempCelsius = tempKelvin - 273.15;
