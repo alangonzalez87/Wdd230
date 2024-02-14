@@ -27,7 +27,7 @@ function displayEnterprises(empresas) {
         fullName.textContent = `${empresa.nombre}`; // fill in the blank
 
         
-        portrait.setAttribute('src', empresa.imageurl);
+        portrait.setAttribute('src', empresa.imagen);
         portrait.setAttribute('alt', `Portrait of ${empresa.nombre}`); // fill in the blank
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '340');
