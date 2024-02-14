@@ -1,0 +1,68 @@
+{
+    "empresas": [
+      {
+        "nombre": "Wayne Enterprises",
+        "direccion": "Gotham City",
+        "telefono": "+1 (555) 123-4567",
+        "web": "https://wayne-enterprises.com",
+        "imagen": "wayne_enterprises_logo.png",
+        "membresia": "Premium",
+        "informacion_adicional": "Líder en tecnología y desarrollo de Gotham City"
+      },
+      {
+        "nombre": "Stark Industries",
+        "direccion": "Los Angeles",
+        "telefono": "+1 (555) 987-6543",
+        "web": "https://stark-industries.com",
+        "imagen": "stark_industries_logo.png",
+        "membresia": "Gold",
+        "informacion_adicional": "Innovación en tecnología y fabricación de armas"
+      },
+      {
+        "nombre": "LexCorp",
+        "direccion": "Metropolis",
+        "telefono": "+1 (555) 555-5555",
+        "web": "https://lexcorp.com",
+        "imagen": "lexcorp_logo.png",
+        "membresia": "Silver",
+        "informacion_adicional": "Multinacional con intereses en tecnología y medios de comunicación"
+      },
+      {
+        "nombre": "Oscorp",
+        "direccion": "New York City",
+        "telefono": "+1 (555) 456-7890",
+        "web": "https://oscorp.com",
+        "imagen": "oscorp_logo.png",
+        "membresia": "Bronze",
+        "informacion_adicional": "Empresa de investigación científica y desarrollo de tecnologías avanzadas"
+      },
+      {
+        "nombre": "Umbrella Corporation",
+        "direccion": "Raccoon City",
+        "telefono": "+1 (555) 321-0987",
+        "web": "https://umbrella-corp.com",
+        "imagen": "umbrella_corp_logo.png",
+        "membresia": "Basic",
+        "informacion_adicional": "Líder en biotecnología y armas bioquímicas"
+      },
+      {
+        "nombre": "S.H.I.E.L.D.",
+        "direccion": "New York City",
+        "telefono": "+1 (555) 789-0123",
+        "web": "https://shield.gov",
+        "imagen": "shield_logo.png",
+        "membresia": "Platinum",
+        "informacion_adicional": "Agencia internacional de inteligencia y defensa"
+      },
+      {
+        "nombre": "Weyland-Yutani Corporation",
+        "direccion": "Los Angeles",
+        "telefono": "+1 (555) 234-5678",
+        "web": "https://weyland-yutani.com",
+        "imagen": "weyland_yutani_logo.png",
+        "membresia": "Diamond",
+        "informacion_adicional": "Líder en tecnología espacial y biotecnología"
+      }
+    ]
+  }
+  
