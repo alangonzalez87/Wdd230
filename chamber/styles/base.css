@@ -380,3 +380,83 @@ hr{
   text-decoration: none;
   cursor: pointer;
 }
+/*directory file*/
+#cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de tamaño igual */
+  gap: 20px; /* Espacio entre las columnas y filas */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 5px 5px 20px black;
+  
+}
+.card img{
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 10px;
+}
+.card .direction{
+  font-size: 5em;
+}
+.card .web{
+  text-decoration: none;
+  font-size: 1em;
+  
+}
+
+.membership{
+  display: inline-block;
+  font-size: 2em;
+  color: silver;
+  font-weight: bold;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px black ;
+
+}
+
+
+
+.card img {
+  max-width: 100%; /* Imagen se ajusta al ancho de la tarjeta */
+  height: auto; /* Altura automática */
+}
+
+.card p {
+  margin: 10px 0; /* Margen entre los párrafos */
+}
+
+
+/*add class list*/
+.list #cards {
+  display: flex; /* Cambiar a display flex para que los elementos se muestren en una columna */
+  flex-direction: column; /* Establecer la dirección de la columna */
+}
+
+.list section {
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section span address .phone .web .membership{
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
